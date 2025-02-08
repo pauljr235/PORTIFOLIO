@@ -47,7 +47,7 @@ header li a {
 }
 
 header a:hover {
-    color: #ffffff;
+    color: #f5a623;
     transform: scale(1.1);
 
 }
@@ -213,15 +213,20 @@ section.sobre {
     padding: 80px 4%;
     color: #fff;
     text-align: start;
+    align-items: center;
 
 }
 
 .sobre-img img {
-    width: 500px;
-    height: 800px;
-    border-radius: 30%;
-    box-shadow: 0px 1px 20px #f5a623;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 15%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    padding-right: 32px
 }
+
+
 
 .sobre-box {
     display: flex;
