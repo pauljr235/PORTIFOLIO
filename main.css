@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Space Grotesk", serif;
 }
 
 .container {
@@ -43,6 +43,7 @@ header li a {
     text-decoration: none;
     display: inline-block;
     transition: .3s;
+    font-family: "Space Grotesk", serif;
 }
 
 header a:hover {
@@ -53,10 +54,11 @@ header a:hover {
 
 header button {
     padding: 10px 40px;
+    font-family: "Space Grotesk", serif;
     font-size: 18px;
     font-weight: 600;
     border-radius: 30px;
-    background-color: #00ff08;
+    background-color: #f5a623;
     cursor: pointer;
     border: none;
     color: #1f1f1f;
@@ -65,8 +67,8 @@ header button {
 }
 
 header button:hover {
-    background-color: #02cd09;
-    box-shadow: 0px 0px 10px #00ff08;
+    background-color: #f5a623;
+    box-shadow: 0px 0px 10px #f5a623;
 
 
 }
@@ -89,25 +91,55 @@ section.banner {
 
 }
 
+.banner-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    box-shadow: 0px 10px 30px rgba(245, 166, 35, 0.6);
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+
+    }
+
+    100% {
+        transform: translateY(0px);
+
+    }
+}
+
+
 .banner-text h1 {
     padding-bottom: 40px;
     font-size: 38px;
+    font-family: "Space Grotesk", serif;
 }
 
 .banner-text p {
     font-size: 18px;
     line-height: 24px;
     padding-bottom: 20px;
+    font-family: "Space Grotesk", serif;
 
 }
 
 
 .btn-banner {
     padding: 10px 40px;
+    font-family: "Space Grotesk", serif;
     font-size: 18px;
     font-weight: 600;
     border-radius: 30px;
-    background-color: #02cd09;
+    background-color: #f5a623;
 
     cursor: pointer;
     border: none;
@@ -116,7 +148,7 @@ section.banner {
 }
 
 .btn-banner:hover {
-    box-shadow: 0px 0px 10px #00ff08;
+    box-shadow: 0px 0px 10px #f5a623;
 }
 
 
@@ -137,7 +169,7 @@ section.especialidades h1 {
 }
 
 section.especialidades span {
-    color: #02cd09;
+    color: #f5a623;
 }
 
 
@@ -159,7 +191,7 @@ section.especialidades span {
 }
 
 .especialidades-item:hover {
-    box-shadow: 0px 0px 10px #00ff08;
+    box-shadow: 0px 0px 10px #f5a623;
     transform: scale(1.05);
     transition: .3s;
 
@@ -167,7 +199,7 @@ section.especialidades span {
 
 .especialidades-item i {
     font-size: 70px;
-    color: #02cd09;
+    color: #f5a623;
 }
 
 .especialidades-item h3 {
@@ -184,8 +216,11 @@ section.sobre {
 
 }
 
-.sobre-img {
-    width: 10px;
+.sobre-img img {
+    width: 500px;
+    height: 800px;
+    border-radius: 30%;
+    box-shadow: 0px 1px 20px #f5a623;
 }
 
 .sobre-box {
@@ -212,11 +247,11 @@ section.sobre {
 }
 
 .sobre-text span {
-    color: #02cd09;
+    color: #f5a623;
 }
 
 .sobre-text .sobre-text-social {
-    color: #02aa08;
+    color: #f5a623;
     font-size: 24px;
     padding-top: 20px;
 
@@ -227,13 +262,14 @@ section.sobre {
     color: #000;
     cursor: pointer;
     display: inline-block;
-    background-color: #03d30a;
+    background-color: #f5a623;
     border-radius: 32px;
-    padding: 16px;
+    padding: 8px;
+    border-radius: 60%;
 }
 
 .sobre-text .sobre-text-social i:hover {
-    color: #58f35d;
+    color: #000;
     transform: scale(1.1);
 
 }
@@ -256,7 +292,7 @@ section.portfolio h1 {
 }
 
 section.portfolio span {
-    color: #00ff08
+    color: #f5a623;
 }
 
 .portfolio-boxes {
@@ -326,7 +362,7 @@ form {
 }
 
 .formulario span {
-    color: #02cd09;
+    color: #f5a623;
 }
 
 form input,
@@ -353,7 +389,7 @@ form button {
     font-size: 18px;
     font-weight: bold;
     border-radius: 10px;
-    background-color: #02cd09;
+    background-color: #f5a623;
     cursor: pointer;
     border: none;
     color: #000;
@@ -364,8 +400,8 @@ form button {
 }
 
 form button:hover {
-    background-color: #00ff08;
-    box-shadow: 0px 0px 10px #02cd09;
+    background-color: #f5a623;
+    box-shadow: 0px 0px 10px #f5a623;
 
 
 }
@@ -382,12 +418,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 4px solid #02cd09;
+    border-bottom: 4px solid #f5a623;
 }
 
 .footer-social i {
     margin-right: 8px;
-    color: #03d30a;
+    color: #f5a623;
     cursor: pointer;
     display: inline-block;
     background-color: #000;
@@ -406,7 +442,7 @@ footer {
 }
 
 .footer-social i:hover {
-    color: #58f35d;
+    color: #f5a623;
     transform: scale(1.1);
 
 }
@@ -419,7 +455,7 @@ footer {
 
 
 .footer-email i {
-    color: #00ff08;
+    color: #f5a623;
     font-size: 24px;
     padding-right: 8px;
     align-items: center;
