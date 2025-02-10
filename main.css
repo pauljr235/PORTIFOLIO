@@ -88,6 +88,8 @@ header button:hover {
 
 
 
+
+
 /* BANNER */
 
 section.banner {
@@ -532,13 +534,19 @@ footer img {
     }
 }
 
+
+
+.menu-burger {
+    display: none;
+}
+
 /* Responsividade para iPhone (Mobile - Telas até 768px) */
 @media screen and (max-width: 768px) {
     header {
         padding-top: 20px;
         position: fixed;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: transparent;
     }
 
     header .container {
@@ -546,20 +554,58 @@ footer img {
         text-align: center;
     }
 
+    header .logo img {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    header .btn-menu {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+
+    }
+
+    .menu-burger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+
+    .menu-burger span {
+        font-size: 40px;
+    }
+
+
     .menu ul {
-        display: flex;
+        display: inline;
         flex-direction: column;
         gap: 10px;
+        position: absolute;
+        right: 60px;
+        top: 65px;
+        border-radius: 16px;
+        padding: 0 16px;
+        background-color: aliceblue;
+        text-align: center;
+        padding: 10px;
     }
 
     .menu ul li {
-        padding: 10px 0;
+        padding: 10px;
     }
 
     .banner {
         padding: 80px 5%;
         flex-direction: column;
         text-align: center;
+        margin-top: 50px;
     }
 
     .banner-text h1 {

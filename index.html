@@ -28,7 +28,7 @@
                     <img src="./images/circle.png" alt="logo">
                 </a>
             </div>
-            <div class="menu">
+            <div id="menu" class="menu">
                 <nav>
                     <ul>
                         <li>
@@ -48,6 +48,9 @@
             </div>
             <div id="btn-menu" class="btn-menu">
                 <button type="button">Contatos</button>
+            </div>
+            <div id="menu-burger" class="menu-burger" style="color: aliceblue;">
+                <span class="bar">☰</span>
             </div>
         </div>
     </header>
@@ -246,6 +249,17 @@
         document.getElementById('contact-form').addEventListener('click', function () {
             alert('Sua questão foi enviada com sucesso!')
         })
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuBurger = document.getElementById('menu-burger')
+            const menu = document.getElementById('menu')
+
+            menuBurger.addEventListener('click', function () {
+                menu.style.display = menu.style.display === 'block' ? 'none' : 'block'
+            })
+        })
+
+
 
 
     </script>
