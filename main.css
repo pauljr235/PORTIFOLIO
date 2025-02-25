@@ -300,11 +300,14 @@ section.portfolio span {
 }
 
 .portfolio-boxes {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
+    gap: 50px;
 }
 
 .portfolio-item {
+
     width: 360px;
     height: 460px;
     background-color: #1f1f1f;
