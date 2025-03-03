@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -49,6 +46,9 @@
             <div id="btn-menu" class="btn-menu">
                 <button type="button">Contatos</button>
             </div>
+            <div>
+                <button id="translate-btn">EN</button>
+            </div>
             <div id="menu-burger" class="menu-burger" style="color: aliceblue;">
                 <span class="bar">☰</span>
             </div>
@@ -59,15 +59,12 @@
             <div class="container">
                 <div class="banner">
                     <div class="banner-text">
-                        <h1>TRANSFORMANDO IDEIAS <span>EM REALIDADE DIGITAL</span></h1>
-                        <p>Criamos soluções digitais sob medida para você. Do design à programação, da concepção à
-                            implementação, transformamos conceitos em soluções digitais inovadoras.
-                            Desenvolvemos websites, sistemas e aplicativos eficientes, modernos e preparados para o
-                            futuro.
-                        </p>
-                        <button id="btn-banner" class="btn-banner" type="button">
-                            Entre em contato
-                        </button>
+                        <h1 id="banner-title">TRANSFORMANDO IDEIAS <span>EM REALIDADE DIGITAL</span></h1>
+                        <p id="banner-description">Criamos soluções digitais sob medida para você. Do design à
+                            programação, da concepção à implementação, transformamos conceitos em soluções digitais
+                            inovadoras. Desenvolvemos websites, sistemas e aplicativos eficientes, modernos e preparados
+                            para o futuro.</p>
+                        <button id="btn-banner" class="btn-banner" type="button">Entre em contato</button>
                     </div>
                     <div class="banner-img">
                         <img src="./images/perfilNovo.png" alt="banner">
@@ -77,58 +74,37 @@
         </section>
         <section class="especialidades" id="especialidades">
             <div class="container">
-                <h1>MINHAS <span>ESPECIALIDADES</span></h1>
+                <h1 id="especialidades-title">MINHAS <span>ESPECIALIDADES</span></h1>
                 <div class="especialidades-box">
                     <div class="especialidades-item">
                         <i class="bi bi-qr-code-scan"></i>
-                        <h3>Website</h3>
-                        <p>Tenha um website moderno, responsivo e otimizado para representar sua marca de forma
-                            profissional. Desenvolvo sites que combinam design atrativo e velocidade, garantindo uma
-                            excelente experiência para seus visitantes e melhorando sua presença
-                            online.
-                            <br>
-                            <br>
-                            🔹 Design personalizado e alinhado à sua identidade visual
-                            <br>
-                            🔹 Responsivo para desktop, tablet e mobile
-                            <br>
-                            🔹 Código limpo e seguro para melhor desempenho
-                        </p>
+                        <h3 id="website-title">Website</h3>
+                        <p id="website-description">Tenha um website moderno, responsivo e otimizado para representar
+                            sua marca de forma profissional. Desenvolvo sites que combinam design atrativo e velocidade,
+                            garantindo uma excelente experiência para seus visitantes e melhorando sua presença
+                            online.<br><br>🔹 Design personalizado e alinhado à sua identidade visual<br>🔹 Responsivo
+                            para desktop, tablet e mobile<br>🔹 Código limpo e seguro para melhor desempenho</p>
                     </div>
                     <div class="especialidades-item">
                         <i class="bi bi-cart"></i>
-                        <h3>Loja</h3>
-                        <p>
-                            Crio e-commerces modernos, escaláveis e de alta performance utilizando React.js (com
-                            TypeScript), API e React Router DOM para proporcionar uma navegação fluida e dinâmica.
-                            Desenvolvo lojas virtuais seguras e intuitivas, otimizadas para oferecer a melhor
-                            experiência de compra ao seu cliente.
-                            <br>
-                            <br>
-                            🔹 Arquitetura SPA (Single Page Application) para carregamento rápido
-                            <br>
-                            🔹 Gerenciamento dinâmico de produtos através de integração com APIs
-                            <br>
-                            🔹 Múltiplas páginas com navegação fluida via React Router DOM
-                            <br>
-                            🔹 Integração com gateways de pagamento e cálculo de frete em tempo real
-                        </p>
+                        <h3 id="loja-title">Loja</h3>
+                        <p id="loja-description">Crio e-commerces modernos, escaláveis e de alta performance utilizando
+                            React.js (com TypeScript), API e React Router DOM para proporcionar uma navegação fluida e
+                            dinâmica. Desenvolvo lojas virtuais seguras e intuitivas, otimizadas para oferecer a melhor
+                            experiência de compra ao seu cliente.<br><br>🔹 Arquitetura SPA (Single Page Application)
+                            para carregamento rápido<br>🔹 Gerenciamento dinâmico de produtos através de integração com
+                            APIs<br>🔹 Múltiplas páginas com navegação fluida via React Router DOM<br>🔹 Integração com
+                            gateways de pagamento e cálculo de frete em tempo real</p>
                     </div>
                     <div class="especialidades-item">
                         <i class="bi bi-wordpress"></i>
-                        <h3>Landing page</h3>
-                        <p>Precisa converter visitantes em clientes? Uma landing page bem planejada pode aumentar suas
-                            vendas, capturar leads e destacar sua oferta de forma objetiva e eficiente. Foco em alta
-                            conversão, carregamento rápido e experiência otimizada, ideal para campanhas de marketing
-                            digital e lançamentos.
-                            <br>
-                            <br>
-                            🔹 Estruturada para atrair e converter visitantes
-                            <br>
-                            🔹 Layout estratégico com call to action (CTA) eficaz
-                            <br>
-                            🔹 Integração com ferramentas de automação e analytics
-                        </p>
+                        <h3 id="landing-page-title">Landing page</h3>
+                        <p id="landing-page-description">Precisa converter visitantes em clientes? Uma landing page bem
+                            planejada pode aumentar suas vendas, capturar leads e destacar sua oferta de forma objetiva
+                            e eficiente. Foco em alta conversão, carregamento rápido e experiência otimizada, ideal para
+                            campanhas de marketing digital e lançamentos.<br><br>🔹 Estruturada para atrair e converter
+                            visitantes<br>🔹 Layout estratégico com call to action (CTA) eficaz<br>🔹 Integração com
+                            ferramentas de automação e analytics</p>
                     </div>
                 </div>
             </div>
@@ -140,91 +116,65 @@
                         <img src="./images/img6.jpeg" alt="foto perfil">
                     </div>
                     <div class="sobre-text">
-                        <h1>
-                            MUITO PRAZER, <br> <span>EU SOU PAULO LOPES</span>.
-                        </h1>
-
-                        <p>
-                            Olá, sou engenheiro front-end, apaixonado por criar interfaces que não
+                        <h1 id="sobre-title">MUITO PRAZER, <br> <span>EU SOU PAULO LOPES</span>.</h1>
+                        <p id="sobre-description">Olá, sou engenheiro front-end, apaixonado por criar interfaces que não
                             apenas funcionem bem, mas que também proporcionem uma experiência fluida e agradável para o
                             usuário. Com uma base sólida em tecnologias como HTML, CSS, JavaScript e frameworks modernos
                             (React, Vue, etc.), estou em constante evolução para me adaptar às novas tendências e
-                            necessidades do mercado.
-                            <br>
-                            <br>
-                        </p>
-                        <h2>O QUE <span>OFEREÇO</span> </h2>
+                            necessidades do mercado.<br><br></p>
+                        <h2 id="o-que-ofereco-title">O QUE <span>OFEREÇO</span></h2>
                         <br>
-                        <p>
-                            Como engenheiro front-end, eu trago uma mentalidade focada no aprendizado constante e
-                            no
-                            aperfeiçoamento das minhas habilidades. Tenho experiência em criar layouts responsivos,
-                            otimizar
-                            performance e garantir a acessibilidade das aplicações. Trabalho bem em equipe e estou
-                            sempre
-                            disposto a colaborar e aprender com os colegas mais experientes. Estou preparado para
-                            contribuir
-                            em projetos de front-end, sempre focando em entregar a melhor experiência ao usuário.</p>
-
+                        <p id="o-que-ofereco-description">Como engenheiro front-end, eu trago uma mentalidade focada no
+                            aprendizado constante e no aperfeiçoamento das minhas habilidades. Tenho experiência em
+                            criar layouts responsivos, otimizar performance e garantir a acessibilidade das aplicações.
+                            Trabalho bem em equipe e estou sempre disposto a colaborar e aprender com os colegas mais
+                            experientes. Estou preparado para contribuir em projetos de front-end, sempre focando em
+                            entregar a melhor experiência ao usuário.</p>
                     </div>
                 </div>
-
             </div>
         </section>
         <section class="portfolio" id="projetos">
             <div class="container">
-                <h1>MEU <span>PORTFÓLIO.</span></h1>
+                <h1 id="portfolio-title">MEU <span>PORTFÓLIO.</span></h1>
                 <div class="portfolio-boxes">
                     <a href="https://restaurante-bs-roan.vercel.app/">
                         <div class="portfolio-item" style="background-image: url(images/rest-img.png);">
-                            <div class="overlay">
-                                Projeto 1
-                            </div>
+                            <div class="overlay">Projeto 1</div>
                         </div>
                     </a>
                     <a href="https://disney-app-sand.vercel.app/">
                         <div class="portfolio-item" style="background-image: url(images/disney.png);">
-                            <div class="overlay">
-                                Projeto 2
-                            </div>
+                            <div class="overlay">Projeto 2</div>
                         </div>
                     </a>
                     <a href="https://eplay-two-ochre.vercel.app/">
                         <div class="portfolio-item" style="background-image: url(images/spider.png);">
-                            <div class="overlay">
-                                Projeto 3
-                            </div>
+                            <div class="overlay">Projeto 3</div>
                         </div>
                     </a>
                     <a href="https://app-food-seven.vercel.app/">
                         <div class="portfolio-item" style="background-image: url(images/HomeFood.png);">
-                            <div class="overlay">
-                                Projeto 4
-                            </div>
+                            <div class="overlay">Projeto 4</div>
                         </div>
                     </a>
                     <a href="https://github.com/pauljr235/To-do-List">
                         <div class="portfolio-item"
                             style="background-size:contain; background-image: url(images/screencapture-to-do-list-eight-olive-95-vercel-app-2025-03-03-20_06_24.png);">
-                            <div class="overlay">
-                                Projeto 5
-                            </div>
+                            <div class="overlay">Projeto 5</div>
                         </div>
                     </a>
                     <a href="https://barber-shop-sigma-eight.vercel.app/">
                         <div class="portfolio-item" style="background-image: url(images/barbearia.png);">
-                            <div class="overlay">
-                                Projeto 6
-                            </div>
+                            <div class="overlay">Projeto 6</div>
                         </div>
+                    </a>
                 </div>
-                </a>
-
             </div>
         </section>
         <section id="form" class="formulario">
             <div class="container">
-                <h1>FALE <span>COMIGO.</span></h1>
+                <h1 id="form-title">FALE <span>COMIGO.</span></h1>
                 <form action="https://formsubmit.co/pauljr235@gmail.com" method="POST">
                     <input type="text" name="name" placeholder="Seu nome" required>
                     <input type="email" name="email" placeholder="Seu email" required>
@@ -234,14 +184,12 @@
                         <button type="submit">Enviar</button>
                     </div>
                 </form>
-
             </div>
         </section>
     </main>
     <footer id="footer">
         <div class="container">
             <div class="footer-line">
-
                 <div class="footer-social">
                     <a
                         href="https://www.linkedin.com/in/paulo-roberto-de-assis-lopes-596887127/?trk=opento_sprofile_details">
@@ -262,28 +210,94 @@
     </footer>
 
     <script>
+        // Textos em português e inglês
+        const texts = {
+            pt: {
+                bannerTitle: "TRANSFORMANDO IDEIAS <span>EM REALIDADE DIGITAL</span>",
+                bannerDescription: "Criamos soluções digitais sob medida para você. Do design à programação, da concepção à implementação, transformamos conceitos em soluções digitais inovadoras. Desenvolvemos websites, sistemas e aplicativos eficientes, modernos e preparados para o futuro.",
+                btnBanner: "Entre em contato",
+                especialidadesTitle: "MINHAS <span>ESPECIALIDADES</span>",
+                websiteTitle: "Website",
+                websiteDescription: "Tenha um website moderno, responsivo e otimizado para representar sua marca de forma profissional. Desenvolvo sites que combinam design atrativo e velocidade, garantindo uma excelente experiência para seus visitantes e melhorando sua presença online.<br><br>🔹 Design personalizado e alinhado à sua identidade visual<br>🔹 Responsivo para desktop, tablet e mobile<br>🔹 Código limpo e seguro para melhor desempenho",
+                lojaTitle: "Loja",
+                lojaDescription: "Crio e-commerces modernos, escaláveis e de alta performance utilizando React.js (com TypeScript), API e React Router DOM para proporcionar uma navegação fluida e dinâmica. Desenvolvo lojas virtuais seguras e intuitivas, otimizadas para oferecer a melhor experiência de compra ao seu cliente.<br><br>🔹 Arquitetura SPA (Single Page Application) para carregamento rápido<br>🔹 Gerenciamento dinâmico de produtos através de integração com APIs<br>🔹 Múltiplas páginas com navegação fluida via React Router DOM<br>🔹 Integração com gateways de pagamento e cálculo de frete em tempo real",
+                landingPageTitle: "Landing page",
+                landingPageDescription: "Precisa converter visitantes em clientes? Uma landing page bem planejada pode aumentar suas vendas, capturar leads e destacar sua oferta de forma objetiva e eficiente. Foco em alta conversão, carregamento rápido e experiência otimizada, ideal para campanhas de marketing digital e lançamentos.<br><br>🔹 Estruturada para atrair e converter visitantes<br>🔹 Layout estratégico com call to action (CTA) eficaz<br>🔹 Integração com ferramentas de automação e analytics",
+                sobreTitle: "MUITO PRAZER, <br> <span>EU SOU PAULO LOPES</span>.",
+                sobreDescription: "Olá, sou engenheiro front-end, apaixonado por criar interfaces que não apenas funcionem bem, mas que também proporcionem uma experiência fluida e agradável para o usuário. Com uma base sólida em tecnologias como HTML, CSS, JavaScript e frameworks modernos (React, Vue, etc.), estou em constante evolução para me adaptar às novas tendências e necessidades do mercado.<br><br>",
+                oQueOferecoTitle: "O QUE <span>OFEREÇO</span>",
+                oQueOferecoDescription: "Como engenheiro front-end, eu trago uma mentalidade focada no aprendizado constante e no aperfeiçoamento das minhas habilidades. Tenho experiência em criar layouts responsivos, otimizar performance e garantir a acessibilidade das aplicações. Trabalho bem em equipe e estou sempre disposto a colaborar e aprender com os colegas mais experientes. Estou preparado para contribuir em projetos de front-end, sempre focando em entregar a melhor experiência ao usuário.",
+                portfolioTitle: "MEU <span>PORTFÓLIO.</span>",
+                formTitle: "FALE <span>COMIGO.</span>"
+            },
+            en: {
+                bannerTitle: "TURNING IDEAS <span>INTO DIGITAL REALITY</span>",
+                bannerDescription: "We create custom digital solutions for you. From design to programming, from conception to implementation, we transform concepts into innovative digital solutions. We develop efficient, modern, and future-ready websites, systems, and applications.",
+                btnBanner: "Contact me",
+                especialidadesTitle: "MY <span>SPECIALTIES</span>",
+                websiteTitle: "Website",
+                websiteDescription: "Have a modern, responsive, and optimized website to professionally represent your brand. I develop sites that combine attractive design and speed, ensuring an excellent experience for your visitors and improving your online presence.<br><br>🔹 Custom design aligned with your visual identity<br>🔹 Responsive for desktop, tablet, and mobile<br>🔹 Clean and secure code for better performance",
+                lojaTitle: "Store",
+                lojaDescription: "I create modern, scalable, and high-performance e-commerce using React.js (with TypeScript), API, and React Router DOM to provide a fluid and dynamic navigation. I develop secure and intuitive virtual stores, optimized to offer the best shopping experience to your customer.<br><br>🔹 SPA (Single Page Application) architecture for fast loading<br>🔹 Dynamic product management through API integration<br>🔹 Multiple pages with fluid navigation via React Router DOM<br>🔹 Integration with payment gateways and real-time shipping calculation",
+                landingPageTitle: "Landing page",
+                landingPageDescription: "Need to convert visitors into customers? A well-planned landing page can increase your sales, capture leads, and highlight your offer in an objective and efficient way. Focus on high conversion, fast loading, and optimized experience, ideal for digital marketing campaigns and launches.<br><br>🔹 Structured to attract and convert visitors<br>🔹 Strategic layout with effective call to action (CTA)<br>🔹 Integration with automation and analytics tools",
+                sobreTitle: "NICE TO MEET YOU, <br> <span>I'M PAULO LOPES</span>.",
+                sobreDescription: "Hello, I am a front-end engineer, passionate about creating interfaces that not only work well but also provide a smooth and pleasant experience for the user. With a solid foundation in technologies like HTML, CSS, JavaScript, and modern frameworks (React, Vue, etc.), I am constantly evolving to adapt to new trends and market needs.<br><br>",
+                oQueOferecoTitle: "WHAT I <span>OFFER</span>",
+                oQueOferecoDescription: "As a front-end engineer, I bring a mindset focused on constant learning and improving my skills. I have experience in creating responsive layouts, optimizing performance, and ensuring application accessibility. I work well in a team and am always willing to collaborate and learn from more experienced colleagues. I am prepared to contribute to front-end projects, always focusing on delivering the best user experience.",
+                portfolioTitle: "MY <span>PORTFOLIO.</span>",
+                formTitle: "CONTACT <span>ME.</span>"
+            }
+        };
+
+        let currentLang = 'pt'; // Idioma inicial
+
+        // Função para traduzir a página
+        function translatePage(lang) {
+            document.getElementById('banner-title').innerHTML = texts[lang].bannerTitle;
+            document.getElementById('banner-description').innerHTML = texts[lang].bannerDescription;
+            document.getElementById('btn-banner').innerText = texts[lang].btnBanner;
+            document.getElementById('especialidades-title').innerHTML = texts[lang].especialidadesTitle;
+            document.getElementById('website-title').innerText = texts[lang].websiteTitle;
+            document.getElementById('website-description').innerHTML = texts[lang].websiteDescription;
+            document.getElementById('loja-title').innerText = texts[lang].lojaTitle;
+            document.getElementById('loja-description').innerHTML = texts[lang].lojaDescription;
+            document.getElementById('landing-page-title').innerText = texts[lang].landingPageTitle;
+            document.getElementById('landing-page-description').innerHTML = texts[lang].landingPageDescription;
+            document.getElementById('sobre-title').innerHTML = texts[lang].sobreTitle;
+            document.getElementById('sobre-description').innerHTML = texts[lang].sobreDescription;
+            document.getElementById('o-que-ofereco-title').innerHTML = texts[lang].oQueOferecoTitle;
+            document.getElementById('o-que-ofereco-description').innerHTML = texts[lang].oQueOferecoDescription;
+            document.getElementById('portfolio-title').innerHTML = texts[lang].portfolioTitle;
+            document.getElementById('form-title').innerHTML = texts[lang].formTitle;
+        }
+
+        // Evento de clique no botão de tradução
+        document.getElementById('translate-btn').addEventListener('click', function () {
+            currentLang = currentLang === 'pt' ? 'en' : 'pt'; // Alterna entre português e inglês
+            translatePage(currentLang);
+            this.innerText = currentLang === 'pt' ? 'EN' : 'PT'; // Altera o texto do botão
+        });
+
+        // Outros scripts existentes
         document.getElementById('btn-menu').addEventListener('click', function () {
-            document.getElementById('footer').scrollIntoView({ behavior: 'smooth' })
-        })
+            document.getElementById('footer').scrollIntoView({ behavior: 'smooth' });
+        });
         document.getElementById('btn-banner').addEventListener('click', function () {
-            document.getElementById('form').scrollIntoView({ behavior: 'smooth' })
-        })
+            document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+        });
         document.getElementById('contact-form').addEventListener('click', function () {
-            alert('Sua questão foi enviada com sucesso!')
-        })
+            alert('Sua questão foi enviada com sucesso!');
+        });
 
         document.addEventListener('DOMContentLoaded', function () {
-            const menuBurger = document.getElementById('menu-burger')
-            const menu = document.getElementById('menu')
+            const menuBurger = document.getElementById('menu-burger');
+            const menu = document.getElementById('menu');
 
             menuBurger.addEventListener('click', function () {
-                menu.style.display = menu.style.display === 'block' ? 'none' : 'block'
-            })
-        })
-
-
-
-
+                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+        });
     </script>
 </body>
 
